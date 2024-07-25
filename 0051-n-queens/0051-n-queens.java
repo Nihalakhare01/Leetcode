@@ -1,7 +1,6 @@
 class Solution {
 
-     List<List<String>> res = new ArrayList<>();
-
+     
     public boolean issafe(char board[][], int row , int col){
 
         // diagonally up
@@ -51,6 +50,9 @@ class Solution {
     }
 
     public List<List<String>> solveNQueens(int n) {
+        
+        List<List<String>> res = new ArrayList<>();
+
 
        char board[][] = new char[n][n];
         for(int i=0; i<n; i++){
