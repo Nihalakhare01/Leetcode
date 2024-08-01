@@ -13,8 +13,6 @@ class Solution {
 
             if(height[lp] < height[rp]){
                 lp++;
-            }else if(height[lp] == height[rp]){
-                rp--;
             }else{
                 rp--;
             }
