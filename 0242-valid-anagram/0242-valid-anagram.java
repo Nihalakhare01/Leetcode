@@ -10,7 +10,7 @@ class Solution {
 
         for(int i=0; i<t.length(); i++){
             char ch = t.charAt(i);
-            if(map.get(ch) != null){
+            if(map.containsKey(ch)){
                 if(map.get(ch) == 1)
                     map.remove(ch);
                 else
@@ -19,7 +19,6 @@ class Solution {
                 return false;
             }      
         }
-        
         return map.isEmpty();
     }
 }
